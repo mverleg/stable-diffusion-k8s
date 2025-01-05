@@ -40,7 +40,7 @@ spec:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       initContainers:
         - name: ensure-stable-models
-          image: busybox:1.35
+          image: busybox:1.37
           command: ["/bin/sh"]
           args:
             - -c
